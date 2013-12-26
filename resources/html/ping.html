@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html><!-- xmlns="http://www.w3.org/1999/xhtml"-->
+<head>
+<link rel="stylesheet" type="text/css" media="screen" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/bubbles.css" />
+<title>Ping!</title>
+</head>
+<body>
+<h3>Bubble instance</h3>
+<div id="buseinfo">
+<table data-template class="ui-widget ui-widget-content">
+    <tr><th class="ui-widget-header">Instance</th><td class="ui-widget-content">{{name}}</td></tr>
+    <tr><th class="ui-widget-header">DB time</th><td class="ui-widget-content">{{now}}</td></tr>
+    <tr><th class="ui-widget-header">Webserver time</th><td class="ui-widget-content">{{buse_time|date 'YYYY-MM-DD HH:mm:ss'}}</td></tr>
+    <tr><th class="ui-widget-header">Number of bubbles</th><td class="ui-widget-content">{{num_bubbles}}</td></tr>
+    <tr><th class="ui-widget-header">Number of calls</th><td class="ui-widget-content">{{calls}}</td></tr>
+    <tr><th class="ui-widget-header">Start time</th><td class="ui-widget-content">{{start_time}}</td></tr>
+    <tr><th class="ui-widget-header">Free mem MB</th><td class="ui-widget-content">{{memory.free_mb}}</td></tr>
+    <tr><th class="ui-widget-header">Alloc mem MB</th><td class="ui-widget-content">{{memory.alloc_mb}}</td></tr>
+    <tr><th class="ui-widget-header">Max MB</th><td class="ui-widget-content">{{memory.max_mb}}</td></tr>
+    <tr><th class="ui-widget-header">Total free MB</th><td class="ui-widget-content">{{memory.total_free_mb}}</td></tr>
+</table>
+</div>
+<pre id='debug'>
+</pre>
+
+<!--script type="text/javascript" src="js/json2.js"></script-->
+<!--script src="http://www.google.com/jsapi"></script>
+<script>
+  google.load("jquery","1");
+  google.load("jqueryui","1");
+</script-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery-ui-i18n.min.js" type="text/javascript"></script>
+<script src="js/tempo.min.js" type="text/javascript"></script>
+<script src="js/ping.js" type="text/javascript"></script>
+</body>
+</html>

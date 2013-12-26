@@ -1,0 +1,22 @@
+# bubbles
+
+FIXME: write description
+
+## Usage
+
+### Start buse
+./bubbles buse config.clj
+
+### Run tests
+(Make shure the ichnaea project is loaded)
+lein test
+
+## Installation
+
+After fresh checkout:
+
+cp lib-extra/* lib/
+lein compile
+cp bust.sqlite-TEMPLATE bust.sqlite
+
+

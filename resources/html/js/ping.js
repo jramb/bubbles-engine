@@ -1,0 +1,1 @@
+((function(){var a,b,c,d,e,f;a=jQuery,e=function(a){return a.start_time=new Date(a.start_time),f.render(a),window.setTimeout(d,5e3)},c=!1,f=Tempo.prepare("buseinfo"),b=function(b){if(c)return a("#debug").html(b)},d=function(){return a.ajax({type:"GET",contentType:"application/json",url:"/ping",success:e,dataType:"json"})},d()})).call(this);

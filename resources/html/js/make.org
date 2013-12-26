@@ -1,0 +1,6 @@
+coffee -c bubbles.coffee
+cljsc bubbles.cljs >bubbles.js
+cljsc bubbles.cljs '{:optimizations :whitespace :pretty-print false :output-to "bubbles.js"}'
+#nogo#cljsc bubbles.cljs '{:optimizations :simple :pretty-print true :output-to "bubbles.js"}'
+#nogo#cljsc bubbles.cljs '{:optimizations :advanced :output-to "bubbles.js"}'
+#stillnogo#cljsc bubbles.cljs '{:optimizations :advanced :pretty-print true :output-to "bubbles.js" :externs ["externs/jquery.js"]}'

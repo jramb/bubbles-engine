@@ -1,0 +1,28 @@
+===Clojure-style===
+{ :uuid    "123123123123123"
+  :version "1-87823749283"
+  :name    "my-first-bubble"
+  :type    "plain"
+  :memory  "<a>sdskdjksjd</a>"
+  :parent  "32323232323"
+}
+
+===XML-style===
+<b xmlns="http://bubbles.nc.com">
+ <uuid>123123123123</uuid>
+ <version>1-897293482394</version>
+ <name>my-first-bubble</name>
+ <type>plain</type>
+ <memory>........</memory>
+ <parent></parent>
+</b>
+
+===JSON===
+{ "uuid": "123123123123123"
+  "version": "1-87823749283"
+  "name": "my-first-bubble"
+  "type": "plain"
+  "memory": "<a>sdskdjksjd</a>"
+  "parent": "32323232323"
+}
+
